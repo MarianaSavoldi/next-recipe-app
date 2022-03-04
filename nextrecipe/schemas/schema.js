@@ -5,6 +5,7 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import chef_schema from './chef'
 import ingredient_schema from './ingredient'
+import recipe_schema from './recipe'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -15,6 +16,7 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     chef_schema,
-    ingredient_schema
+    ingredient_schema,
+    recipe_schema,
   ]),
 })
